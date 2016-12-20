@@ -347,10 +347,10 @@ $(document).ready(function() {
     //=================================TOGGLE VISIBILITY OF POPULATION MAP==================
     $("#control-pop-map").click(function() {
         if (document.getElementById("control-pop-map").checked == true) {
-            feature_group.addLayer(exp_2012popdensityJSON);
+            feature_group.addLayer(popdensityJSON);
             feature_group.addTo(map);
         } else {
-            feature_group.removeLayer(exp_2012popdensityJSON);
+            feature_group.removeLayer(popdensityJSON);
         }
     });
     
